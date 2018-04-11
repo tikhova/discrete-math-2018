@@ -31,8 +31,7 @@ public class Main {
             word = word + Character.toString(stringX.charAt(i)) + Character.toString(stringY.charAt(i)) +
                     Character.toString(stringZ.charAt(i));
         }
-        if (Pattern.matches("((000)|(((01)|(10))1)|(001)(((01|10)0)|(111))*(110))*", word) && x + y == z ||
-                !Pattern.matches("((000)|(((01)|(10))1)|(001)(((01|10)0)|(111))*(110))*", word) && x + y != z) {
+        if (Pattern.matches("((000)|(((01)|(10))1)|(001)(((01|10)0)|(111))*(110))*", word) == (x + y == z)) {
             System.out.println("You're the best <3");
         } else {
             System.out.println("Fuck this shit...");
